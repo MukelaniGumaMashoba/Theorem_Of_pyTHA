@@ -32,6 +32,7 @@ namespace Tumelo_Ideas
                     Console.WriteLine("'|\\\'");
                     Console.WriteLine("'|\\\\\'");
                     Console.WriteLine("'|\\\\\\'");
+                    Console.WriteLine(" ");
 
                     double answer = 0;
                     _ = Math.Pow(answer, 2);
