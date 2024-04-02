@@ -9,10 +9,14 @@ namespace Tumelo_Ideas
     {
         private static void Main(string[] args)
         {
-
+            //Adding a boolean value to make it always loop and recalculate
             bool check = true;
 
+
             while (check != false) {
+
+                //Using this variable to check if they want to calculate or not
+                
                 Console.Write("Enter CAL to calculate any side ? using theorem of pythagoras :");
                 string play = Console.ReadLine().ToUpper();
 
@@ -21,7 +25,10 @@ namespace Tumelo_Ideas
                     Console.WriteLine("Which side you looking for ? enter r or x or y;");
                     char side = char.Parse(Console.ReadLine());
 
+                    // initialising 3 var which are double to store the given sides
                     double a, h, op;
+                    
+                    // creating an triangle 
                     Console.WriteLine("'|\\\'");
                     Console.WriteLine("'|\\\\\'");
                     Console.WriteLine("'|\\\\\\'");
@@ -61,6 +68,8 @@ namespace Tumelo_Ideas
                 else
                 {
                     Console.Write("Good Bye Thanks for using the program....");
+
+                    //Stopping the program when use enter nothing or press wrong text
                     check = false;
                     break;
                 }
