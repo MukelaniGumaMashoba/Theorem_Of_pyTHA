@@ -22,7 +22,8 @@ namespace Tumelo_Ideas
 
                 if (play == "CAL")
                 {
-                    Console.WriteLine("Which side you looking for ? enter r or x or y;");
+                    Console.WriteLine("Which side you looking for ? enter r or x or y ;");
+                    Console.Write("r HYpotenus is x adjecent plus opposite which is y : ");
                     char side = char.Parse(Console.ReadLine());
 
                     // initialising 3 var which are double to store the given sides
@@ -51,19 +52,19 @@ namespace Tumelo_Ideas
                     {
                         answer = Math.Pow(a, 2) + Math.Pow(op, 2);
                         double hypotonus = Math.Sqrt(answer);
-                        Console.WriteLine($"The answer for side {side} and the answer is {hypotonus}");
+                        Console.WriteLine($"The answer for side {side} and the answer is {Math.Round(hypotonus,2)}");
                     }
                     else if (side == 'x')
                     {
                         answer = Math.Pow(h, 2) - Math.Pow(op, 2);
                         double adjacent = Math.Sqrt(answer);
-                        Console.WriteLine($"The answer for side {side} and the answer is {adjacent}");
+                        Console.WriteLine($"The answer for side {side} and the answer is {Math.Round(adjacent,2)}");
                     }
                     else if (side == 'y')
                     {
                         answer = Math.Pow(h, 2) - Math.Pow(a, 2);
                         double opposite = Math.Sqrt(answer);
-                        Console.WriteLine($"The answer for side {side} and the answer is {opposite}");
+                        Console.WriteLine($"The answer for side {side} and the answer is {Math.Round(opposite,2)}");
                     }
                 }
                 else
